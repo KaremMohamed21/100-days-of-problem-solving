@@ -6,11 +6,11 @@
 // if there isn't minimal count or amountMade < minimalCount, then minimalCount = amountMade
 
 function cakes(recipe, available) {
-  let minimalCount; 
+  let minimalCount = Infinity; 
   for (let key in recipe) {
     if (!available[key]) return 0;
     let amountMade = Math.floor(available[key] / recipe[key]);  
-    if (!minimalCount || amountMade < minimalCount) minimalCount = amountMade;
+    if (amountMade < minimalCount) minimalCount = amountMade;
   }
   
   return minimalCount;
