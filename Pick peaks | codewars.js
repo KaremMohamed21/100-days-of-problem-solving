@@ -17,7 +17,3 @@ function pickPeaks(arr){
   
   return final;
 }
-
-
- p                i
-  [3, 2, 3, 6, 4, 1, 2, 3, 2, 1, 2, 3]
