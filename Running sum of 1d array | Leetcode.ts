@@ -12,3 +12,14 @@ function runningSum(nums: number[]): number[] {
 
     return final;
 };
+
+// Better solution
+function runningSum(nums: number[]): number[] {
+   let final : number[] = []
+   let sum = 0
+    for (let n of nums){
+       sum += n
+       final.push(sum)
+     }
+     return final
+}
