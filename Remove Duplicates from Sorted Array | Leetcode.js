@@ -7,6 +7,7 @@
 // make sure to record the replacement time and subtract it from the length
 let removeDuplicates = (nums) => {
     let count;
+
     for (let i = 0; i < nums.length; i++) {
         count = 0;
         for (let j = 0; j < nums.length; j++) {
@@ -19,5 +20,5 @@ let removeDuplicates = (nums) => {
         }
     }
 
-    process.stdout.write(nums + '\n');
+    return nums.length
 };
