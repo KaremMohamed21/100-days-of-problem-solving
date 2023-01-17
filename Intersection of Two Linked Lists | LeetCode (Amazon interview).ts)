@@ -1,0 +1,14 @@
+// set pointers to the begining of the lists
+// iterate through the list 
+// if their values are the same return the intersection
+// if any pointer finishes before the other, make em iterate the second list
+function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {
+    let pointer1 = headA,
+        pointer2 = headB
+    while (pointer1 != pointer2) {
+        pointer1 = pointer1 ? pointer1.next : headB
+        pointer2 = pointer2 ? pointer2.next : headA 
+    }
+    
+    return pointer1
+};
